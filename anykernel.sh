@@ -5,19 +5,21 @@
 # begin properties
 properties() { '
 kernel.string=Genom Kernel by rama982@telegram
-do.devicecheck=0
+do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
+device.name1=rosemary
+device.name2=secret
+device.name3=maltose
 supported.versions=
 supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=/dev/block/platform/bootdevice/by-name/boot;
-is_slot_device=0;
+block=/dev/block/by-name/boot;
+is_slot_device=1;
 ramdisk_compression=auto;
 
 ## AnyKernel methods (DO NOT CHANGE)
